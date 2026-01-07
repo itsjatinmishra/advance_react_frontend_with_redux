@@ -3,8 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import { AuthProvider } from "./AuthContext";
 import { Provider } from "react-redux";
-import store from "./Redux/Store";
-import CakeContainer from "./Redux/CakeContainer";
+import store from "./Practice_Redux/ProductStore";
+// import CakeContainer from "./Redux/CakeContainer";
+import ProductDisplay from "./UserDashboard/ProductDisplay";
 // import Home from "./Home";
 // import About from "./About";
 // import Contact from "./Contact";
@@ -26,8 +27,11 @@ function App() {
     // </Router>
     // <ReduceHook />
     // <ReducerHook2 />
+    // <Provider store={store}>
+    //   <CakeContainer />
+    // </Provider>
     <Provider store={store}>
-      <CakeContainer />
+      <ProductDisplay />
     </Provider>
   );
 }
